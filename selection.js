@@ -28,6 +28,7 @@ for (var x=0; x<selectionInput.length;x++)
         {
             selectionVal = y;
         }
+        selectionStep++;
     }
     if ( x != selectionVal )
     {
@@ -35,8 +36,10 @@ for (var x=0; x<selectionInput.length;x++)
         selectionInput[x] = selectionInput[selectionVal];
         selectionInput[selectionVal] = selectionChangeVal;
     }
-    selectionStep++;
+    
 }
 
 // I add step var to watch how many step should loop did. Result is 55 versus 10.
 // I am scared.
+
+// Add: I write in wrong position. Finally is 55 vs 45.
