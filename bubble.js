@@ -19,12 +19,12 @@ while( lengthCheck<bubbleInput.length )
 {
     for (var j=0; j<bubbleInput.length-lengthCheck; j++)
     {
-        if ( bubbleInput[j]<bubbleInput[j+1] )
+        if ( bubbleInput[j]<bubbleInput[j++] )
         {
             var swapval = bubbleInput[j];
-            bubbleInput[j] = bubbleInput[j+1];
-            bubbleInput[j+1] = swapval;
+            bubbleInput[j] = bubbleInput[j++];
+            bubbleInput[j++] = swapval;
         }
-    lengthCheck++;
     }
+    lengthCheck++;
 }
