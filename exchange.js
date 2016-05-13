@@ -1,23 +1,7 @@
-// "val" means value.
 // Exchange Sort
 var ExchangeInput =[69,81,30,38,9,2,47,61,32,79];
 // First step: change value
-// Ref: http://stackoverflow.com/questions/872310/javascript-swap-array-elements
-var tmpary = [1,3,7,5,9];
-for (var i=0; i<tmpary.length; i++)
-{
-    console.log("The"+ i + "element: " +tmpary[i]);
-}
-console.log(" ");
-
-var swapval = tmpary[2];
-tmpary[2] = tmpary[3];
-tmpary[3] = swapval;
-
-for (var j=0; j<tmpary.length; j++)
-{
-    console.log("The"+ j + "element: " +tmpary[j]);
-}
+// Please read swapval.js
 
 // Secend step: Change once
 var ExchangeInSecendStep = ExchangeInput;
