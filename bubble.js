@@ -12,3 +12,19 @@ for (var i=0; i<bubbleInputFirstStep.length; i++)
         bubbleInputFirstStep[i+1] = swapval;
     }
 }
+
+// Secend, sort muptile until ended
+var lengthCheck = 0;
+while( lengthCheck<bubbleInput.length )
+{
+    for (var j=0; j<bubbleInput.length-lengthCheck; j++)
+    {
+        if ( bubbleInput[j]<bubbleInput[j+1] )
+        {
+            var swapval = bubbleInput[j];
+            bubbleInput[j] = bubbleInput[j+1];
+            bubbleInput[j+1] = swapval;
+        }
+    lengthCheck++;
+    }
+}
